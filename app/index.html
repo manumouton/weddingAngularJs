@@ -57,9 +57,24 @@
 </header>
 <!-- Navigation Ends -->
 
-<!-- Partie principale -->
-<div class="page {{pageClass}} container-fluid" ng-view></div>
+<!-- Button left -->
+<div class="buttonLeft" ng-controller="navigationButton">
+    <a href="{{getPreviousPage()}}" class="btn btn-circle">
+        <fa name="angle-double-left"/>
+    </a>
+</div>
 
-<!--Footer Ends -->
+<!-- Partie principale -->
+<div class="page page-home container-fluid" ng-view>
+
+</div>
+
+<!--Button right -->
+<div class="buttonRight" ng-controller="navigationButton">
+    <a href="{{getNextPage()}}" class="btn btn-circle">
+        <fa name="angle-double-right"/>
+    </a>
+</div>
+
 </body>
 </html>
