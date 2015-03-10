@@ -77,7 +77,7 @@ weddingApp.controller("receptionController" ,function ($scope) {
 });
 
 
-weddingApp.controller("giftsController" ,function ($scope) {
+weddingApp.controller("listController" ,function ($scope) {
     $scope.url = "http://www.kadolog.be/caroetmanusemarient";
     $scope.pageClass = "page-home";
 });

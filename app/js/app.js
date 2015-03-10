@@ -16,9 +16,9 @@ weddingApp.config(function($routeProvider) {
             templateUrl: 'partials/reception.html',
             controller: 'receptionController'
         })
-        .when('/gifts', {
-            templateUrl: 'partials/gifts.html',
-            controller: 'giftsController'
+        .when('/list', {
+            templateUrl: 'partials/list.html',
+            controller: 'listController'
         })
         .when('/rsvp', {
             templateUrl: 'partials/rsvp.html',
