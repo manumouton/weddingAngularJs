@@ -2,7 +2,7 @@
 ============================================================================= */
 .page        {
     bottom:0;
-    padding-top:100px;
+    padding-top:70px;
     position:absolute;
     top:0;
     width:100%;
@@ -23,12 +23,6 @@
     animation: rotateFall 1s both ease-in;
 }
 .page-home.ng-enter 		{
-    /*-webkit-animation:scaleUp 0.5s both ease-in;
-    -moz-animation:scaleUp 0.5s both ease-in;
-    animation:scaleUp 0.5s both ease-in;*/
-    /*-webkit-animation:slideInUp 0.5s both ease-in;
-    -moz-animation:slideInUp 0.5s both ease-in;
-    animation:slideInUp 0.5s both ease-in;*/
     -webkit-animation:slideInRight 0.5s both ease-in;
     -moz-animation:slideInRight 0.5s both ease-in;
     animation:slideInRight 0.5s both ease-in;
@@ -58,17 +52,6 @@
     100% { transform: translateY(100%) rotateZ(17deg); }
 }
 
-/* scale up */
-@keyframes scaleUp {
-    from 		{ opacity: 0.3; transform: scale(0.8); }
-}
-@-moz-keyframes scaleUp {
-    from 		{ opacity: 0.3; -moz-transform: scale(0.8); }
-}
-@-webkit-keyframes scaleUp {
-    from 		{ opacity: 0.3; -webkit-transform: scale(0.8); }
-}
-
 /* slide in from the right */
 @keyframes slideInRight {
     from 	{ transform:translateX(100%); }
@@ -81,29 +64,4 @@
 @-webkit-keyframes slideInRight {
     from 	{ -webkit-transform:translateX(100%); }
     to 		{ -webkit-transform: translateX(0); }
-}
-
-/* slide in from the bottom */
-@keyframes slideInUp {
-    from 	{ transform:translateY(100%); }
-    to 		{ transform: translateY(0); }
-}
-@-moz-keyframes slideInUp {
-    from 	{ -moz-transform:translateY(100%); }
-    to 		{ -moz-transform: translateY(0); }
-}
-@-webkit-keyframes slideInUp {
-    from 	{ -webkit-transform:translateY(100%); }
-    to 		{ -webkit-transform: translateY(0); }
-}
-
-/* slide in from the bottom */
-@keyframes slideOutLeft {
-    to 		{ transform: translateX(-100%); }
-}
-@-moz-keyframes slideOutLeft {
-    to 		{ -moz-transform: translateX(-100%); }
-}
-@-webkit-keyframes slideOutLeft {
-    to 		{ -webkit-transform: translateX(-100%); }
 }
