@@ -1,0 +1,30 @@
+<div class="buttonLeft">
+    <a href="#/home" class="btn btn-circle page-scroll">
+        <fa name="angle-double-left"/>
+    </a>
+</div>
+<div class="well">
+    <h3>
+        <fa name="heart"/>
+        Cérémonie - 12h
+    </h3>
+    <address class="text-center">
+        <strong><a target="_blank" href="{{url}}">Eglise Saint-Martin d'Avennes</a></strong><br>
+        Rue de la Justice de Paix, 3<br>
+        4260 Braives (Avennes)<br>
+    </address>
+
+
+    <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
+        <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
+            <ui-gmap-window show="true" options="windowOptions" closeClick="closeClick()">
+                <div>{{title}}</div>
+            </ui-gmap-window>
+        </ui-gmap-marker>
+    </ui-gmap-google-map>
+</div>
+<div class="buttonRight">
+    <a href="#/day/reception" class="btn btn-circle page-scroll">
+        <fa name="angle-double-right"/>
+    </a>
+</div>

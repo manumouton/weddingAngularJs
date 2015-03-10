@@ -1,0 +1,26 @@
+{
+  "name": "WeddingAngularJs",
+  "version": "1.0.0",
+  "description": "Site web de notre mariage",
+  "author": "Manu Mouton<manumouton@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manumouton/weddingAngularJs"
+  },
+  "bugs": {
+    "url": "https://github.com/manumouton/weddingAngularJsIssues"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "colors": "^1.0.3",
+    "body-parser": "^1.9.0",
+    "express": "^4.9.7",
+    "serve-static": "^1.6.4",
+    "path": "*",
+    "lodash": "^2.4.1"
+  }
+}
