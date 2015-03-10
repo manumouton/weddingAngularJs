@@ -6,6 +6,7 @@ weddingApp.config(function($routeProvider) {
     $routeProvider
         .when('/home', {
             templateUrl: 'partials/home.html',
+            controller: 'mainController'
         })
         .when('/day/ceremony', {
             templateUrl: 'partials/ceremony.html',
@@ -20,10 +21,8 @@ weddingApp.config(function($routeProvider) {
             controller: 'giftsController'
         })
         .when('/rsvp', {
-            templateUrl: 'partials/rsvp.html'
-        })
-        .when('/dropdown', {
-
+            templateUrl: 'partials/rsvp.html',
+            controller: 'rsvpController'
         })
         .otherwise({
             redirectTo: '/home'

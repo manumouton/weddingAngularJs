@@ -16,6 +16,7 @@ weddingApp.controller("navigation" ,function ($scope) {
 });
 
 weddingApp.controller("ceremonyController" ,function ($scope) {
+    $scope.pageClass = 'page-home';
     $scope.map = { center: { latitude: 50.6292333, longitude: 5.1148211 }, zoom: 16 };
     $scope.options = {scrollwheel: false};
     $scope.marker = {
@@ -46,6 +47,7 @@ weddingApp.controller("ceremonyController" ,function ($scope) {
 });
 
 weddingApp.controller("receptionController" ,function ($scope) {
+    $scope.pageClass = 'page-home';
     $scope.map = { center: { latitude: 50.618876, longitude: 5.111879 }, zoom: 16 };
     $scope.options = {scrollwheel: false};
     $scope.marker = {
@@ -77,4 +79,13 @@ weddingApp.controller("receptionController" ,function ($scope) {
 
 weddingApp.controller("giftsController" ,function ($scope) {
     $scope.url = "http://www.kadolog.be/caroetmanusemarient";
+    $scope.pageClass = "page-home";
+});
+
+weddingApp.controller("mainController" ,function ($scope) {
+    $scope.pageClass = "page-home";
+});
+
+weddingApp.controller("rsvpController" ,function ($scope) {
+    $scope.pageClass = "page-home";
 });
