@@ -264,3 +264,34 @@ a:hover{
     margin-right:auto;
     text-align: center;
 }
+
+/* Responsive CSS */
+
+/* Mobile phones */
+@media (max-width: 480px){
+    .container-fluid{
+        height:90%;
+    }
+
+    .buttonLeft, .buttonRight{
+        display:none;
+    }
+
+    .page{
+
+    }
+
+    .pageHome{
+
+    }
+}
+
+/* Tablets */
+@media (max-width: 767px){
+    .container-fluid{
+        width:100%;
+        height:90%;
+    }
+
+
+}
