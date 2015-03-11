@@ -305,13 +305,10 @@ a:hover{
         width: 80%;
     }
 
-    .page{
-
-    }
-
-    .pageHome{
-
-    }
+    .page.ng-leave 	{  }
+    .page.ng-enter 	{  }
+    .page-home.ng-leave {  }
+    .page-home.ng-enter {  }
 }
 
 /* Tablets */
